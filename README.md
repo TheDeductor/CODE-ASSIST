@@ -1,3 +1,7 @@
+### AI Disclosure
+
+AI tools, including Claude and Gemini, were used as learning and development assistants. This was not a vibe-coded project; I actively implemented, debugged, and learned through the process, using AI mainly for explanations, troubleshooting, and exploring approaches.
+
 # CODE-ASSIST
 Model weights (GGUF): (https://huggingface.co/pranav9999/qwen25coder-student-tutor-gguf/tree/main)
 
@@ -149,31 +153,6 @@ Demo links:
 
 The temporary Gradio link is session-based and may stop working when the Colab runtime ends.
 
-## Repository Structure
-
-```text
-code-assist/
-├── README.md
-├── notebook/
-│   └── Student_Programming_Assistant_FineTuning.ipynb
-├── data/
-│   ├── train.jsonl
-│   ├── val.jsonl
-│   └── test.jsonl
-├── results/
-│   ├── stat_split_sizes.png
-│   ├── stat_source_distribution.png
-│   ├── stat_bucket_distribution.png
-│   ├── stat_length_distribution.png
-│   ├── stat_loss_curve.png
-│   ├── stat_base_vs_ft_perplexity.png
-│   ├── stat_base_vs_ft_rouge.png
-│   ├── stat_base_vs_ft_loss.csv
-│   ├── stat_base_vs_ft_rouge.csv
-│   └── qualitative_comparison.md
-└── demo/
-    └── demo video or related files
-```
 
 ## How to Reproduce
 
@@ -205,22 +184,6 @@ The GGUF file and a working `Modelfile` are not included unless they are added t
 - Hallucination reduction is partial. The model may still state incorrect details in an otherwise useful answer.
 - No retrieval-augmented generation, persistent conversation memory, or permanent deployment is included in the current version.
 - The Gradio demo is temporary unless it is deployed separately.
-
-## Recommended Screenshots and Placement
-
-Add the screenshots below to `results/` using the exact filenames shown. This keeps the repository organized and allows the images to be linked from this README.
-
-1. `results/stat_split_sizes.png`: dataset split sizes, preferably shown immediately after the Dataset section.
-2. `results/stat_source_distribution.png`: number of training examples from each source, placed with the Dataset section.
-3. `results/stat_bucket_distribution.png`: task-category distribution, placed with the Dataset section.
-4. `results/stat_length_distribution.png`: question and answer length distribution, placed after Data Preparation.
-5. `results/stat_loss_curve.png`: training and validation loss curve, placed after Fine-Tuning.
-6. `results/stat_base_vs_ft_perplexity.png`: base-model versus fine-tuned-model perplexity, placed after Evaluation.
-7. `results/stat_base_vs_ft_rouge.png`: base-model versus fine-tuned-model ROUGE-L, placed directly below the perplexity image.
-8. `demo/gradio_demo.png`: a screenshot of the Gradio chat interface showing one programming question and the assistant response, placed in the Interface section.
-9. `demo/demo_video.mp4` or a hosted video link: a short screen recording showing the interface in use, linked in the Interface section.
-
-Only upload screenshots that do not expose private account information, API keys, email addresses, or unrelated files. A clean crop of the relevant chart or interface is preferred over a full desktop screenshot.
 
 ## Acknowledgements
 
